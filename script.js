@@ -10,11 +10,11 @@ projectCards.forEach(card => {
 
     card.addEventListener('mouseenter', () => {
         card.style.transition = 'none';
-        card.style.transform = `translateZ(50px)`;
+        card.style.transform = `translateZ(55px)`;
     });
 
     card.addEventListener('mouseleave', () => {
-        card.style.transition = 'all 0.3s ease';
+        card.style.transition = 'all 0.4s ease';
         card.style.transform = `rotateY(0deg) rotateX(0deg) translateZ(0)`;
     });
 });
@@ -36,7 +36,7 @@ window.addEventListener('resize', () => {
     const width = window.innerWidth;
     const projectSection = document.getElementById('projects');
 
-    if (width < 768) {
+    if (width < 770) {
         projectSection.style.display = 'block';
     } else {
         projectSection.style.display = 'flex';
